@@ -79,9 +79,17 @@ const flyTarget = (hackdaysData) => {
 }
 
 const addHackdayMarkers = (map) => {
-  Papa.parse(hackdaysDataURL, {download: true, header: true, complete: (results) => {
-    const hackdaysData = results.data
-    map.addLayer(layer(hackdaysData))
-    map.flyTo(flyTarget(hackdaysData))
-  }})
+  Papa.parse(hackdaysDataURL, {
+    download: true, 
+    header: true, 
+    complete: (results) => {
+      const hackdaysData = results.data
+      console.log(`Loaded ${hackdaysData.length} rows from CSV:`, hackdaysData)
+      map.addLayer(layer(hackdaysData))
+      map.flyTo(flyTarget(hackdaysData))
+    },
+    error: (err, file, inputElem, reason) => {
+      console.log("Could not load CSV:", {err, file, inputElem, reason})
+    }
+  })
 }
