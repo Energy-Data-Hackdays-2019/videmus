@@ -2,6 +2,9 @@
 const zoom = 12
 const center = {lng: 8.53, lat: 47.38}
 
+const hackdaysDataURL = 
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQAlHdhghXRPd7bSL8xOZZ2jyKiDd52i6nc4sGKIBZPOAjEgzGrnp94-cFBAqF-LDNQyfHjjBrAJYq1/pub?gid=0&single=true&output=csv"
+
 mapboxgl.accessToken =
   "pk.eyJ1IjoicmFmZmFlbGtyZWJzIiwiYSI6ImNqcmFxMmN4czByc3I0OW80eWhwcW4ybXMifQ.LCVgSPNn107Vdk_aTL98kw"
 
@@ -71,7 +74,6 @@ const flyTarget = (hackdaysData) => {
 }
 
 const addHackdayMarkers = (map) => {
-  const hackdaysDataURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQAlHdhghXRPd7bSL8xOZZ2jyKiDd52i6nc4sGKIBZPOAjEgzGrnp94-cFBAqF-LDNQyfHjjBrAJYq1/pub?output=csv'
   Papa.parse(hackdaysDataURL, {download: true, header: true, complete: (results) => {
     const hackdaysData = results.data
     map.addLayer(layer(hackdaysData))
