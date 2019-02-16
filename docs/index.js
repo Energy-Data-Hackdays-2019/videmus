@@ -74,7 +74,7 @@ const flyTarget = (hackdaysData) => {
   const rowsWithCoordinates = hackdaysData.filter(row => row[1])
   if (rowsWithCoordinates.length < 1) return
   const [lat, lng] = rowsWithCoordinates[0][1].split(", ")
-  return {center: [lng, lat]}
+  return {center: [lng, lat], zoom: 12}
 }
 
 const addHackdayMarkers = (map) => {
