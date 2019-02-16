@@ -8,9 +8,7 @@ Recherchen haben ergeben, dass es solche Tools bereits gibt, so z.B. von der Sta
 
 Ziel unseres Ansatzes ist es, solche Daten im Sinne von Open Data öffentlich verfügbar zu machen. Das Team hat ein Kollaborationsmodell entwickelt, das den Wert der Veröffentlichung solcher Daten aufzeigt. Die Besitzer/Betreiber der Infrastruktur haben grosses Interesse an solchen Meldungen, da es ihnen erlaubt, fehlbare Zustände schneller und mit weniger Personalaufwand zu erkennen. Zudem ist es für sie interessant, solche Daten öffentlich zugänglich zu machen, denn ein Betreiber allein hat nur wenige Daten und mit Zugriff auf die Daten aller Betreiber lassen sich aussagekräftigere Datenanalysen erstellen.
 
-Die Bürger sollen für solche Meldungen eine Belohnung erhalten, da wir davon ausgehen, dass ~der Nörgeltrieb~ das intrinsische Interesse allein nicht ausreicht. Solche Belohnungen können z.B. in Form von Migros Cumulus Punkten erfolgen; bezahlt von den Infrastrukturbetreibern. Belohnungen sollen natürlich nur für wertvolle Meldungen ausgeschüttet werden.
-
-
+Wir haben geprüft, ob die Bürger für solche Meldungen eine Belohnung erhalten sollten. Solche Belohnungen können z.B. in Form von Migros Cumulus Punkten erfolgen; bezahlt von den Infrastrukturbetreibern. Umfragen haben ergeben, dass es vermutlich besser ist, mit der intrinsischen Motivation der Bürger zu arbeiten. Man will ja auch nicht, dass die Bürger Objekte beschädigen, um dann eine Belohnung für eine Meldung zu bekommen.
 
 Zudem haben wir mit einfachen Mitteln ein Online-Formular erstellt, mit welchem solche Meldungen gesammelt werden können. Die gesammelten Daten veröffentlichen wir als CSV.
 
