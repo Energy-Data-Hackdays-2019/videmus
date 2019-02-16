@@ -72,20 +72,9 @@ const flyTarget = (hackdaysData) => {
 
 const addHackdayMarkers = (map) => {
   const hackdaysDataURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQAlHdhghXRPd7bSL8xOZZ2jyKiDd52i6nc4sGKIBZPOAjEgzGrnp94-cFBAqF-LDNQyfHjjBrAJYq1/pub?output=csv'
-  const httpRequest = new XMLHttpRequest();
-  httpRequest.onreadystatechange = () => {
-    if (httpRequest.readyState === XMLHttpRequest.DONE) {
-      if (httpRequest.status === 200) {
-        const hackdaysData = Papa.parse(httpRequest.responseText).data
-        map.addLayer(layer(hackdaysData))
-        map.flyTo(flyTarget(hackdaysData))
-      } else {
-        console.log("Could not retrieve CSV data")
-      }
-    } else {
-      // Not ready yet.
-    }
-  };
-  httpRequest.open('GET', hackdaysDataURL)
-  httpRequest.send()
+  Papa.parse(hackdaysDataURL, {download: true, header: true, complete: (results) => {
+    const hackdaysData = results.data
+    map.addLayer(layer(hackdaysData))
+    map.flyTo(flyTarget(hackdaysData))
+  }})
 }
