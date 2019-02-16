@@ -1,6 +1,6 @@
 
-const zoom = 12
-const center = {lng: 8.53, lat: 47.38}
+const zoom = 6
+const center = {lng: 8.059, lat: 46.979}
 
 const hackdaysDataURL = 
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQAlHdhghXRPd7bSL8xOZZ2jyKiDd52i6nc4sGKIBZPOAjEgzGrnp94-cFBAqF-LDNQyfHjjBrAJYq1/pub?gid=0&single=true&output=csv"
