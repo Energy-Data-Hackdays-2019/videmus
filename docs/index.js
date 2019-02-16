@@ -8,7 +8,6 @@ const hackdaysDataURL =
 mapboxgl.accessToken =
   "pk.eyJ1IjoicmFmZmFlbGtyZWJzIiwiYSI6ImNqcmFxMmN4czByc3I0OW80eWhwcW4ybXMifQ.LCVgSPNn107Vdk_aTL98kw"
 
-
 const map = new mapboxgl.Map({
   container: "honor-map",
   style: "mapbox://styles/mapbox/streets-v10",
@@ -31,22 +30,26 @@ map.on("load", () => {
 })
 
 const layer = (hackdaysData) => {
-  const hackdaysFeatures = hackdaysData.map(row => {
-    const [lat, lng] = row[1].split(", ")
-    const remark = row[3]
-    const timestamp = row[0]
-    return {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [lng, lat],
-      },
-      properties: {
-        title: remark,
-        icon: "circle-stroked",
-      },
-    }
-  })
+  const hackdaysFeatures = hackdaysData
+    .filter(row => row[0] && row[1] && row[3] && row[6])
+    .map(row => {
+      if (row[0] && row[1] && row[3] && row[6]) return null
+      const timestamp = row[0]
+      const [lat, lng] = row[1].split(", ")
+      const remark = row[3]
+      const submissionID = row[6]
+      return {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [lng, lat],
+        },
+        properties: {
+          title: remark,
+          icon: "circle-stroked",
+        },
+      }
+    })
 
   return {
     id: "points",
