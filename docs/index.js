@@ -31,9 +31,8 @@ map.on("load", () => {
 
 const layer = (hackdaysData) => {
   const hackdaysFeatures = hackdaysData
-    .filter(row => row[0] && row[1] && row[3] && row[6])
+    .filter(row => row[1])
     .map(row => {
-      if (row[0] && row[1] && row[3] && row[6]) return null
       const timestamp = row[0]
       const [lat, lng] = row[1].split(", ")
       const remark = row[3]
