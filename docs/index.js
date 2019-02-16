@@ -80,11 +80,11 @@ const flyTarget = (hackdaysData) => {
 
 const addHackdayMarkers = (map) => {
   Papa.parse(hackdaysDataURL, {
-    download: true, 
-    header: true, 
+    download: true,
     complete: (results) => {
       console.log(`Loaded ${results.data.length} rows from CSV:`, results)
       const hackdaysData = results.data
+      delete hackdaysData[0] // We don't need the header row (and setting header: true for Papa does something different)
       map.addLayer(layer(hackdaysData))
       map.flyTo(flyTarget(hackdaysData))
     },
