@@ -83,8 +83,8 @@ const addHackdayMarkers = (map) => {
     download: true, 
     header: true, 
     complete: (results) => {
+      console.log(`Loaded ${results.data.length} rows from CSV:`, results)
       const hackdaysData = results.data
-      console.log(`Loaded ${hackdaysData.length} rows from CSV:`, hackdaysData)
       map.addLayer(layer(hackdaysData))
       map.flyTo(flyTarget(hackdaysData))
     },
