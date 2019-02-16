@@ -16,5 +16,6 @@ Siehe auch die Schlusspräsentation: (Link folgt)
 
 ## Data
 
-   Online Form: https://form.jotformeu.com/90455619251357
-   Result Data: https://docs.google.com/spreadsheets/d/e/2PACX-1vQAlHdhghXRPd7bSL8xOZZ2jyKiDd52i6nc4sGKIBZPOAjEgzGrnp94-cFBAqF-LDNQyfHjjBrAJYq1/pub?output=csv
+   Online Formular: https://form.jotformeu.com/90455619251357
+   
+   Gesammelte Daten: https://docs.google.com/spreadsheets/d/e/2PACX-1vQAlHdhghXRPd7bSL8xOZZ2jyKiDd52i6nc4sGKIBZPOAjEgzGrnp94-cFBAqF-LDNQyfHjjBrAJYq1/pub?output=csv
