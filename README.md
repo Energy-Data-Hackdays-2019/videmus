@@ -14,10 +14,6 @@ Zudem haben wir mit einfachen Mitteln ein Online-Formular erstellt, mit welchem 
 
 Siehe auch die Schlusspräsentation: (Link folgt)
 
-## Challenge
-
-[Bürger-partizipation](https://hack.opendata.ch/project/291)
-
 ## Data
 
 Online Formular: https://form.jotformeu.com/90455619251357
