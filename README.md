@@ -1,4 +1,4 @@
-![Videmus Logo](https://cdn.pixabay.com/photo/2012/04/01/18/04/eyes-23802_640.png "Zusammen sehen wir mehr!")
+![Videmus Logo](/videmus-eyes.png "Zusammen sehen wir mehr!")
 
 # Videmus
 
