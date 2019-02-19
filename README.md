@@ -12,7 +12,7 @@ Wir haben geprüft, ob die Bürger für solche Meldungen eine Belohnung erhalten
 
 Zudem haben wir mit einfachen Mitteln ein Online-Formular erstellt, mit welchem solche Meldungen gesammelt werden können. Die gesammelten Daten veröffentlichen wir als CSV.
 
-Siehe auch die Schlusspräsentation: (Link folgt)
+Siehe auch die Schlusspräsentation: https://github.com/kreba/videmus/blob/master/videmus_4.pptx?raw=true
 
 ## Data
 
